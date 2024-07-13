@@ -1,14 +1,12 @@
 tasks = []
 
 def add_task():
-    """Add a task to the to-do list"""
     task_description = input("Enter the task description: ")
     task_status = False  # Default status is not completed
     tasks.append({"description": task_description, "status": task_status})
     print(f"Task '{task_description}' added to the to-do list.")
 
 def view_tasks():
-    """View all tasks in the to-do list"""
     if not tasks:
         print("No tasks in the to-do list.")
     else:
@@ -18,7 +16,6 @@ def view_tasks():
             print(f"{index}. {task['description']} - {status}")
 
 def update_task():
-    """Update the status of a task"""
     view_tasks()
     if not tasks:
         return
@@ -40,7 +37,6 @@ def update_task():
         print("Invalid input. Please enter a valid task number.")
 
 def delete_task():
-    """Delete a task from the to-do list"""
     view_tasks()
     if not tasks:
         return
