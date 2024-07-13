@@ -1,15 +1,15 @@
 class calculator:
     def addition(self):
-        print(x + y)
+        print(a + b)
     def subtraction(self):
-        print(x - y)
+        print(a- y)
     def multiplication(self):
-        print(x * y)
+        print(a * b)
     def division(self):
-        print(x / y)
-x = int(input("Enter first number:"))
-y = int(input("Enter second number:"))
-obj1 = calculator()
+        print(a / b)
+a = int(input("Enter first number:"))
+b = int(input("Enter second number:"))
+calc = calculator()
 choice = 1
 while choice !=0:
     print("1. ADDITION")
@@ -18,12 +18,12 @@ while choice !=0:
     print("4. DIVISION")
     choice = int(input("Enter your choice:"))
     if choice == 1:
-        print(obj1.addition())
+        print(calc.addition())
     elif choice == 2:
-        print(obj1.subtraction())
+        print(calc.subtraction())
     elif choice == 3:
-        print(obj1.multiplication())
+        print(calc.multiplication())
     elif choice == 4:
-        print(obj1.division())
+        print(calc.division())
     else:
         print("Invalid choice")
