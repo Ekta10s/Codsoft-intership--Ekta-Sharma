@@ -1,3 +1,4 @@
+
 tasks = []
 
 def add_task():
@@ -75,7 +76,7 @@ def main():
             print("Exiting the To-Do List Application. Goodbye!")
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice")
 
 if __name__ == "__main__":
     main()
